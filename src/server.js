@@ -3,8 +3,8 @@ import dotenv from "dotenv";
 import cors from "cors";
 import job from "./config/cron.js";
 import { connectDB } from "./config/database.js";
-import taskRoutes from "./routes/taskRoutes.js";
-import authRoutes from "./routes/authRoutes.js";
+import taskRoutes from "./modules/tasks/taskRoutes.js";
+import authRoutes from "./modules/users/authRoutes.js";
 
 dotenv.config();
 

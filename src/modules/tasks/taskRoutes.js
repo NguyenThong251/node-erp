@@ -1,12 +1,12 @@
 import express from "express";
 
-import authMiddleware from "../middleware/authMiddleware.js";
-import roleMiddleware from "../middleware/roleMiddleware.js";
+import authMiddleware from "../../middleware/authMiddleware.js";
+import roleMiddleware from "../../middleware/roleMiddleware.js";
 import {
   createTaskHandler,
   getTasksHandler,
   getTaskByIdHandler,
-} from "../controllers/taskController.js";
+} from "./taskController.js";
 
 const router = express.Router();
 

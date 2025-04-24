@@ -1,4 +1,4 @@
-import { createTask, getTasks, getTaskById } from "../services/taskService.js";
+import { createTask, getTasks, getTaskById } from "./taskService.js";
 export const createTaskHandler = async (req, res) => {
   try {
     const creatorId = parseInt(req.user.id, 16);
